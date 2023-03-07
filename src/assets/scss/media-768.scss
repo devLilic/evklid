@@ -1,0 +1,10 @@
+@media(max-width: 768px) {
+  @import  "global/includes", "media/mobile-menu";
+
+  @import "media/media-768/header",
+  "media/media-768/hero",
+  "media/media-768/about-us",
+  "media/media-768/process",
+  "media/media-768/questions",
+  "media/media-768/footer";
+}

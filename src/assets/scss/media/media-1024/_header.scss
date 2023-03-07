@@ -1,0 +1,27 @@
+.container {
+  padding: 0 5rem;
+}
+
+.logo {
+  padding-top: 12px;
+  margin-left: -5px;
+  width: 150px;
+}
+.header {
+  &__inner {
+    justify-content: space-between;
+  }
+
+  &__nav {
+    margin: 0;
+  }
+}
+
+.mobile-menu {
+  display: block;
+}
+
+
+.nav__desktop {
+  display: none;
+}

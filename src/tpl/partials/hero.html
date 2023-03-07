@@ -1,10 +1,17 @@
 <section class="hero">
   <div class="container">
-    <ul class="hero__list">
-      <li class="hero__item hero-item">
-        <h1 class="hero-item__title">Проектные решения любой сложности</h1>
-        <div class="hero-item__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</div>
-        <button class="btn hero-item__btn">Заказать расчёт</button>
+    <ul class="hero-list">
+      <li class="hero-item">
+        <div class="hero-item__inner">
+          <h1 class="hero-item__title">Проектные решения любой сложности</h1>
+          <div class="hero-item__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</div>
+          <button class="btn-primary hero-item__btn">Заказать расчёт</button>
+        </div>
+        <picture>
+          <source srcset="/assets/img/hero-1-lg.jpg, /assets/img/hero-1-lg@2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="/assets/img/hero-1.jpg" media="(min-width: 1025px)">
+          <img src="/assets/img/hero-1.webp" alt="">
+        </picture>
       </li>
     </ul>
   </div>

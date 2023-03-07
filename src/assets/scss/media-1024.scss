@@ -1,0 +1,18 @@
+  @import "global/includes", "media/mobile-menu";
+
+  .title{
+    margin-bottom: 6px;
+  }
+
+  h3{
+    font-size: 2rem;
+    margin: 1px;
+  }
+
+
+  @import "media/media-1024/header",
+  "media/media-1024/hero",
+  "media/media-1024/about-us",
+  "media/media-1024/process",
+  "media/media-1024/questions",
+  "media/media-1024/footer";

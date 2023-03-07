@@ -1,10 +1,12 @@
 .header{
+  background: #FFFFFF;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+
   &__inner{
-    position: relative;
-    height: 100px;
     display: flex;
     align-items: center;
     z-index: 0;
+    padding: 14px 0;
   }
 
   &__nav{
@@ -13,8 +15,14 @@
   }
 }
 
+.logo{
+  width: auto;
+  height: 72px;
+}
+
 .nav{
   &__list{
+    margin-top: 4px;
     display: flex;
     align-items: center;
   }
@@ -22,13 +30,23 @@
   &__item{
     margin-right: 85px;
     border-bottom: 2px solid transparent;
+    position: relative;
+    padding-bottom: 3px;
 
-
-    &:hover{
-      border-bottom: 2px solid $color-main;
+    &:after{
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $color-main;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: width 200ms ease-in-out;
     }
 
-
+    &:hover:after{
+      width: 100%;
+    }
   }
 
   &__link{
@@ -36,6 +54,10 @@
     font-weight: 600;
     line-height: 2.2rem;
     color: #333333;
+
+    &:active{
+      color: $color-main;
+    }
 
     &:focus{
       outline: 2px solid $color-main;
@@ -53,9 +75,9 @@
     border-radius: 16px;
     width: 540px;
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
-
   }
 
   &__inner--open{
@@ -72,15 +94,11 @@
   }
 
   &__open-btn{
-    margin: 0;
+    margin-top: 2px;
     border: none;
-    padding: 4px;
+    padding: 0;
     background-color: transparent;
     cursor: pointer;
-
-    &:hover{
-
-    }
   }
 }
 
@@ -100,4 +118,8 @@
   &-search{
     margin-right: 20px;
   }
+}
+
+.mobile-menu{
+  display: none;
 }

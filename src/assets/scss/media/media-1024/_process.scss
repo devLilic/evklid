@@ -1,0 +1,33 @@
+.process{
+  margin-bottom: 8rem;
+  &__title{
+    margin-bottom: 4.9rem;
+  }
+  &__link{
+    margin-right: 83px;
+  }
+
+  &__steps{
+    margin-bottom: 5.2rem;
+  }
+
+  &__steps-text{
+
+  }
+
+  &__info{
+    margin-right: 0;
+    flex: 1 1 50%;
+  }
+
+  &__inner{
+    gap: 50px;
+  }
+  &__img-block{
+    padding-left: 0;
+  }
+}
+
+.process-step__text{
+  margin-bottom: 43px;
+}

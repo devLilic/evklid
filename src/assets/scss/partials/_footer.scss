@@ -1,3 +1,120 @@
 .footer{
+  color: #CACACA;
+  background: #222222;
+  padding: 50px 0;
+
+  &__title{
+    color: #CACACA;
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 88px;
+    margin-left: 225px;
+    max-width: 360px;
+  }
+
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col{
+    flex: 0 1 590px;
+  }
+
+
+
+  &__logo{
+    display: block;
+    margin-bottom: 2rem;
+    width: 224px;
+  }
+}
+
+.footer-menu{
+  margin-bottom: 90px;
+  &__link{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    @include transition(color);
+
+    &:hover{
+      color: $color-main;
+    }
+  }
+}
+
+.footer-social{
+  &__list{
+    display: flex;
+    gap: 25px;
+  }
+
+  &__link{
+    display: inline-block;
+    height: 6rem;
+    &:focus{
+      outline: 2px solid #FF9900;
+      border-radius: 5px;
+    }
+  }
+
+  &__icon{
+    fill: #7C7C7C;
+    @include transition(fill);
+
+    &:hover{
+      fill: $color-main;
+    }
+  }
+}
+
+.footer-form{
+  width: 570px;
+  margin-left: 10px;
+
+  &__input,
+  &__textarea{
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    background: #414141;
+    margin-bottom: 25px;
+    padding: 14px 25px;
+    border: none;
+    outline: none;
+    @include transition(background-color);
+
+    &:focus,
+    &:hover,
+    &:active{
+      background: #666666;
+    }
+
+    &::placeholder{
+      color: #CACACA;
+    }
+  }
+
+  &__textarea{
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  &__btn{
+    padding: 19px 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 23px;
+    flex: 0 1 47%;
+  }
 
 }

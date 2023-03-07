@@ -1,0 +1,23 @@
+.about-us{
+  margin-bottom: 8rem;
+  &__text{
+    margin-bottom: 6.2rem;
+  }
+
+  &__details{
+    flex-direction: column;
+  }
+
+}
+
+.article{
+  width: 100%;
+}
+
+.details{
+  padding-left: 315px;
+
+  &:before{
+    left: 75px;
+  }
+}

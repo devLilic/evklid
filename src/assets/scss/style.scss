@@ -1,14 +1,14 @@
-@import "node_modules/normalize-scss/sass/normalize";
-@import "global/reset";
-@import "global/vars";
-@import "global/mixins";
-@import "global/fonts";
-@import "global/icons";
-@import "global/global";
+@import "node_modules/normalize-scss/sass/normalize",
+"global/reset",
+"global/includes",
+"global/fonts",
+"global/icons",
+"global/global",
+"global/btn";
 
-@import "partials/header";
-@import "partials/hero";
-@import "partials/about-us";
-@import "partials/process";
-@import "partials/questions";
-@import "partials/footer";
+@import "partials/header",
+"partials/hero",
+"partials/about-us",
+"partials/process",
+"partials/questions",
+"partials/footer";

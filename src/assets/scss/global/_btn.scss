@@ -1,0 +1,64 @@
+.btn {
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: $btn-color;
+  background: $btn-main;
+  border: 0;
+  padding: 19px 38px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    background: rgba($btn-main, 0.7);
+  }
+
+  &:active {
+    background: $btn-main-active;
+  }
+
+  &-primary {
+    @extend .btn;
+    font-size: 2.34581rem;
+    line-height: 2.9rem;
+    padding: 25px 38px;
+  }
+
+
+  &-secondary {
+    @extend .btn;
+    background: transparent;
+    border: 3px solid $btn-main;
+    padding: 19px 35px;
+
+    &:hover,
+    &:focus {
+      background: rgba($btn-main, 1);
+    }
+    &:active {
+      background: $btn-main-active;
+      border-color: $btn-main-active;
+    }
+  }
+
+
+  &-black {
+    @extend .btn;
+    background: transparent;
+    border: 1px solid $btn-black;
+    padding: 20px 35px;
+    color: $btn-black;
+
+    &:hover,
+    &:focus {
+      color: $btn-color;
+      background-color: $btn-black-bg;
+    }
+
+    &:active {
+      background-color: #000;
+    }
+  }
+
+}

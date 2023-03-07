@@ -5,3 +5,6 @@
   background-size: $size;
 }
 
+@mixin transition($prop){
+  transition: $prop 200ms ease-in-out;
+}

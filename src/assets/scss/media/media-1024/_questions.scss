@@ -1,0 +1,17 @@
+.questions{
+  margin-bottom: 8rem;
+  &__title{
+    margin-bottom: 3rem;
+  }
+}
+
+.question{
+
+  &__title{
+    max-width: 760px;
+  }
+  &__headings{
+    height: auto;
+    padding: 30px 0;
+  }
+}
