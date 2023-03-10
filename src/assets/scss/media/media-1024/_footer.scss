@@ -3,6 +3,10 @@
     gap: 0;
   }
 
+  &__col{
+    flex: 1 0 40%;
+  }
+
   &__logo{
     width: 224px;
     padding: 0;
@@ -11,5 +15,14 @@
 
   &-form{
     width: 542px;
+    margin-left: 0;
+  }
+
+  &__title{
+    margin-bottom: 25px;
+  }
+
+  &-form__btn{
+    padding: 19px 38px;
   }
 }

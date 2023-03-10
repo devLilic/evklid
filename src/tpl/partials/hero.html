@@ -7,12 +7,19 @@
           <div class="hero-item__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</div>
           <button class="btn-primary hero-item__btn">Заказать расчёт</button>
         </div>
-        <picture>
-          <source srcset="/assets/img/hero-1-lg.jpg, /assets/img/hero-1-lg@2x.jpg 2x" media="(max-width: 1024px)">
+        <picture class="hero-item__img">
+          <source srcset="/assets/img/hero-1-md.jpg, /assets/img/hero-1-md@2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="/assets/img/hero-1-lg.jpg, /assets/img/hero-1-lg@2x.jpg 2x" media="(min-width: 769px) and (max-width: 1024px)">
           <source srcset="/assets/img/hero-1.jpg" media="(min-width: 1025px)">
           <img src="/assets/img/hero-1.webp" alt="">
         </picture>
+        <div class="slider-dots">
+          <span class="slider-dots__dot"></span>
+          <span class="slider-dots__dot"></span>
+          <span class="slider-dots__dot"></span>
+        </div>
       </li>
     </ul>
   </div>
 </section>
+
